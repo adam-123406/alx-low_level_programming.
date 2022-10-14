@@ -1,24 +1,14 @@
 #include <stdio.h>
 /**
- * main - Prints the numbers from 00 to 99
- * Return: 0
-*/
+ *main-program entry point.
+ *Return:0 if no error, non zero if error.
+ **/
 int main(void)
 {
-int c, i;
-c = i = '0';
-for (c = '0'; c <= '9'; c++)
+char i;
+for (i = 'a'; i <= 'z'; i++)
 {
-for (i = '0'; i <= '9'; i++)
-{
-putchar(c);
 putchar(i);
-if ((c != '9') || (c == '9' && i != '9'))
-{
-putchar(',');
-putchar(' ');
-}
-}
 }
 putchar('\n');
 return (0);
